@@ -1,4 +1,4 @@
-function openTab(evt, option) {
+const openTab = (evt, option) => {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,6 +8,6 @@ function openTab(evt, option) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById("option").style.display = "block";
+    document.getElementById(option).style.display = "block";
     evt.currentTarget.className += " active";
   }
